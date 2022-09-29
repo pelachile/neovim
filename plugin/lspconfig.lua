@@ -100,6 +100,66 @@ nvim_lsp.sumneko_lua.setup {
 
 nvim_lsp.tailwindcss.setup {}
 
+nvim_lsp.intelephense.setup({
+    settings = {
+        intelephense = {
+            stubs = {
+                "bcmath",
+                "bz2",
+                "Core",
+                "curl",
+                "date",
+                "dom",
+                "fileinfo",
+                "filter",
+                "gd",
+                "gettext",
+                "hash",
+                "iconv",
+                "imap",
+                "intl",
+                "json",
+                "libxml",
+                "mbstring",
+                "mcrypt",
+                "mysql",
+                "mysqli",
+                "password",
+                "pcntl",
+                "pcre",
+                "PDO",
+                "pdo_mysql",
+                "Phar",
+                "readline",
+                "regex",
+                "session",
+                "SimpleXML",
+                "sockets",
+                "sodium",
+                "standard",
+                "superglobals",
+                "tokenizer",
+                "xml",
+                "xdebug",
+                "xmlreader",
+                "xmlwriter",
+                "yaml",
+                "zip",
+                "zlib",
+                "polylang-stubs"
+            },
+            environment = {
+              includePaths = {'~/.composer/vendor/laravel'}
+            },
+            files = {
+                maxSize = 5000000;
+            };
+        };
+    },
+    capabilities = capabilities,
+    on_attach = on_attach
+});
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
