@@ -23,6 +23,7 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
+  use 'simrat39/rust-tools.nvim' -- Rust stuff
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
@@ -38,6 +39,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use "terrortylor/nvim-comment"
   use 'folke/zen-mode.nvim'
   use 'folke/tokyonight.nvim'
   use 'xiyaowong/nvim-transparent'
@@ -51,6 +53,5 @@ packer.startup(function(use)
   --
   use "EdenEast/nightfox.nvim"
 
-  use 'lewis6991/gitsigns.nvim'
-  use 'dinhhuy258/git.nvim' -- For git blame & browse
+  use 'tpope/vim-fugitive'
 end)
