@@ -1,4 +1,5 @@
 local servers = {
+  "clangd",
   "intelephense",
   "ts_ls",
   "html",
