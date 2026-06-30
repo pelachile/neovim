@@ -2,7 +2,11 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
-      { "windwp/nvim-ts-autotag" },
+      { "windwp/nvim-ts-autotag",
+        opts = {
+          enable_rename = true,
+        },
+      },
     },
     branch = "master",
     build = ":TSUpdate",

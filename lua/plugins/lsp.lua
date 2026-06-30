@@ -4,6 +4,7 @@ local servers = {
   "ts_ls",
   "html",
   "cssls",
+  "emmet_language_server",
 }
 
 return {
