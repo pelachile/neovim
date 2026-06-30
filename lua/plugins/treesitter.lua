@@ -1,6 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      { "windwp/nvim-ts-autotag" },
+    },
     branch = "master",
     build = ":TSUpdate",
     lazy = false,
@@ -20,9 +23,9 @@ return {
           "python",
           "query",
           "regex",
-          "swift",
           "tsx",
           "typescript",
+          "swift",
           "vim",
           "vimdoc",
           "yaml",
