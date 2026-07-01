@@ -5,6 +5,8 @@ local servers = {
   "html",
   "cssls",
   "emmet_language_server",
+  "cmake",
+  "stylua",
 }
 
 return {
